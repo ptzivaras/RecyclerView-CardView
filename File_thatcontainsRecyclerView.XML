@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/this is my recycler view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="5dp"
+                android:background="#DBE2F3"
+                android:padding="20dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/this is another recycler view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="5dp"
+                android:background="#DBE2F3" />
+
+          
+
+            <Button
+                android:id="@+id/button_walking"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="245dp"
+                android:layout_marginTop="50dp"
+                android:background="#3F51B5"
+                android:text="Walking"
+                android:textColor="#FFFFFF"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button_maxPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#3F51B5"
+                android:text="max pressure"
+                android:textColor="#FFFFFF"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button_cop"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/button_walkingSummary"
+                android:background="#3F51B5"
+                android:text="COP"
+                android:textColor="#FFFFFF"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button_walkingSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/button_maxPressure"
+                android:background="#3F51B5"
+                android:text="walking summary"
+                android:textColor="#FFFFFF"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
